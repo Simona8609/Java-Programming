@@ -1,6 +1,7 @@
 package Calculator.J;
 
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Hello world!
@@ -23,8 +24,6 @@ public class App {
         if (operationType == 1) {
             int additionResult = addition();
             System.out.println("additionResult = " + additionResult);
-        } else if (operationType == 2) {
-
         }
 
     }
@@ -39,39 +38,43 @@ public class App {
 
         int result = number1 + number2;
         return result;
+    }
 
-        public static int substraction() {
-            Scanner scanner = new Scanner(System.in)
-            System.out.println("Enter a number:");
-            int number1 = scanner.nextInt();
-            System.out.println("Enter a number:");
-            int number2 = scanner.nextInt();
 
-            int result = number1 - number2;
-            return result;
+    public static int substraction() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int number1 = scanner.nextInt();
+        System.out.println("Enter a number:");
+        int number2 = scanner.nextInt();
 
-            public static int multiplication() {
-                Scanner scanner = new Scanner(System.in);
-                System.out.println("Enter a number:");
-                int number1 = scanner.nextInt();
-                System.out.println("Enter a number:");
-                int number2 = scanner.nextInt();
-
-                int result = number1 * number2;
-                return result;
-
-                public static int division() {
-                    Scanner scanner = new Scanner(System.in);
-                    System.out.println("Enter a number:");
-                    int number1 = scanner.nextInt();
-                    System.out.println("Enter a number:");
-                    int number2 = scanner.nextInt();
-
-                    int result = number1 / number2;
-                    return result;
+        int result = number1 - number2;
+        return result;
     }
 
     // todo: define other methods
+    public static int multiplication() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int number1 = scanner.nextInt();
+        System.out.println("Enter a number:");
+        int number2 = scanner.nextInt();
 
+        int result = number1 * number2;
+        return result;
+
+    }
+
+    public static int division() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int number1 = scanner.nextInt();
+        System.out.println("Enter a number:");
+        int number2 = scanner.nextInt();
+
+        int result = number1 / number2;
+        int result1 = result;
+        return number1;
+    }
 
 }
