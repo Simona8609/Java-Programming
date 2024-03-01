@@ -38,7 +38,10 @@ public class App {
 
         int result = number1 + number2;
         return result;
+
+
     }
+
 
 
     public static int substraction() {
